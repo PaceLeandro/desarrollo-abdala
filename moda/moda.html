@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script src="array_functions.js"></script>
+    </head>
+    <body>
+        <script>
+                let n= prompt('Ingrese el largo del array');
+
+                let vector= new Array(n);
+
+                for(let i=0; i<n; i++){
+                vector[i]= Math.floor(Math.random()*600);
+                }
+
+                vector= organizar(vector);
+
+                for(let i=0; i<n; i++){
+                    document.write(vector[i]+' ');
+                }
+
+                document.write('<br> La moda es: '+ moda(vector));
+                
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script src="array_functions.js"></script>
+    </head>
+    <body>
+        <script>
+            
+            let vector;
+            let x;
+            
+            x = prompt('Ingrese la cantidad de numeros',' ');
+            
+            vector= new Array(x);
+            
+            for(let i=0; i<x; i++){
+                vector[i]= parseInt(prompt('Ingrese el numero '+i));
+             }
+
+            document.write(mediana(vector));
+
+        </script>
+    </body>
+</html>

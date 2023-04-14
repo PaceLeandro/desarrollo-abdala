@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="array_scripts.js"></script>
+	<title></title>
+</head>
+<body>
+	<script>
+		
+		let x= prompt('Ingrese la cantidad de numeros',' ');
+		let array = [];
+		for(let m=0; m<x; m++){
+			array[m]= prompt('ingrese numero',' ');
+		}
+		let a=contarMultiplos2(array);
+		let b=contarMultiplos3(array);
+		let c=contarMultiplos4(array);
+		let d=contarMultiplos5(array);
+
+		document.write(a+' multiplos de 2 <br>');
+		document.write(b+' multiplos de 3 <br>');
+		document.write(c+' multiplos de 4 <br>');
+		document.write(d+' multiplos de 5 <br>');
+	</script>
+</body>
+</html>
