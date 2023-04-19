@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script src="vectores.js"></script>
+    </head>
+    <body>
+        <script>
+            let n= prompt('Ingrese el largo del array');
+
+            let A= new Array(n);
+
+            for(let i=0; i<n; i++){
+                A[i]= Math.floor(Math.random()*32000);
+            }
+
+            showResults(A);
+
+        </script>
+    </body>
+</html>
