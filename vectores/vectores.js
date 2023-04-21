@@ -81,22 +81,21 @@ function showResults(A){
 
     let suma= calculoTotal(A);
     document.write('<br>La suma total es = '+ suma);
-    
+ 
     document.write('<br>A = ');
-    for(let i=0; i<A.length; i++){
-        document.write(A[i]+' ');
-    }
-    
+    showVector(A);
     let B = mayoresAlPromedio(A,promedio);
     document.write('<br>B = ');
-    for(let i=0; i<B.length; i++){
-        document.write(B[i]+' ');
-    }
+    showVector(B);
     let C = doble(A);
     document.write('<br>C = ');
-    for(let i=0; i<C.length; i++){
-        document.write(C[i]+' ');
+    showVector(C);
+
+
+}
+
+function showVector(A){
+     for(let i=0; i<A.length; i++){
+        document.write(A[i]+' ');
     }
-
-
 }
