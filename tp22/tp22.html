@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="getHashtags.js"></script>
+</head>
+<body>
+	<script>
+			
+		var mensajes=prompt('Ingrese su frase','');
+		
+		let hashtags=getHashtags(mensajes);
+
+        for(let i=0; i<hashtags.length; i++){
+            document.write(hashtags[i]);
+        }
+
+
+	</script>
+</body>
+</html>
