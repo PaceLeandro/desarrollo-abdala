@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script src="date_functions.js"></script>
+    </head>
+    <body>
+
+        <script>
+            let date=new Date();
+            document.write("Dias hasta anio nuevo:",DaysUntilNewYear(date),"<br>");
+            document.write("Dias desde Qatar 2022:", DaysAfterQatar2022(),"<br>");
+            let date1= new Date(2022,9,22);
+            let date2= new Date(2021,9,22);
+            document.write("Distancia entre fechas:",DistanceBetweenDates(date1,date2),"<br>");
+            document.write("Es dia laborable?:",WorkdayOrNot(date),"<br>");
+        </script>
+
+    </body>
+</html>
